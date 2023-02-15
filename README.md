@@ -25,6 +25,20 @@ Goed om te weten: Het experiment wordt gewaardeerd - zelfs/zeker als het niet (h
         
   <br> <img src="https://thumbs.dreamstime.com/b/radar-airport-air-traffic-control-screen-planes-grid-39923582.jpg" width="375px" alt="inspiratie foto 11">
         <img src="https://slm-assets.secondlife.com/assets/7005009/lightbox/radar_j.jpg?1358710356" width="375px" alt="inspiratie foto 12">
+        
+  <br> <img src="https://i.pinimg.com/originals/8d/f1/95/8df195e2fe5479907d684c8c6f073b51.gif" width="375px" alt="inspiratie foto 13">
+        <img src="https://64.media.tumblr.com/b635fb2b4c2f61b0a10b00fef0d7e5c8/89ad2db2de66cba8-1e/s400x600/f0f22b4d45b66cfa0c15fdc483dd0cf1b9269c75.gifv" width="375px" alt="inspiratie foto 14">
+        
+        
+        
+  <br> <img src="https://64.media.tumblr.com/9058391f524aba9ea94363fe21f99bce/tumblr_pdo6uzLC1o1wez7sto1_540.gifv" width="375px" alt="inspiratie foto 15">
+       <img src="https://64.media.tumblr.com/28a71a317a2eb78ec6b1c6d5dca19f68/tumblr_od0qh4Q3A41uqrdeoo1_640.gif" width="375px" alt="inspiratie foto 16">
+  
+  
+  <br> <img src="https://media.tenor.com/EjkGj0t0LR0AAAAC/anime-ship.gif" width="375px" alt="inspiratie foto 17">
+       <img src="https://gifimage.net/wp-content/uploads/2018/10/anime-spaceship-gif-5.gif" width="375px" alt="inspiratie foto 18">
+
+
 
 
 
