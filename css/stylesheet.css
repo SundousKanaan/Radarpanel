@@ -1,0 +1,537 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    caret-color: transparent;
+}
+
+:root {
+    --panel-background: rgb(223, 223, 223);
+    --button-color: rgb(168, 168, 168);
+    --button-shadow-color: rgb(135, 135, 135);
+    --shadow: rgba(0, 0, 0, 0.638);
+    --font-color: white;
+
+    --active-button-color: rgb(0, 242, 250);
+    --active-button-shadow-color: rgb(0, 168, 174);
+    --active-shadow: rgb(0, 247, 255);
+
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    /* height: 100dvh; */
+    overflow: hidden;
+
+    background-image: url(https://images7.alphacoders.com/104/1049004.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+
+    position: relative;
+}
+
+body section:first-of-type {
+    width: 100%;
+    height: 60%;
+    display: block;
+    background-color: transparent;
+    /* background-color: rgba(255, 0, 0, 0.137); */
+
+    position: relative;
+}
+
+body section:first-of-type::before {
+    content: " ";
+    display: block;
+    height: calc(100% + 30em);
+    width: 1%;
+
+    position: absolute;
+    top: 9%;
+    left: 20%;
+    z-index: 5;
+
+    /* background-color: var(--panel-background); */
+    background-color: gray;
+
+}
+
+body section:first-of-type::after {
+    content: " ";
+    display: block;
+    height: calc(100% + 30em);
+    width: 1%;
+
+    position: absolute;
+    top: 9%;
+    right: 20%;
+
+    /* background-color: var(--panel-background); */
+    background-color: gray;
+}
+
+
+/* top stuk */
+
+body section:first-of-type div:first-of-type {
+    display: block;
+    width: 100%;
+    height: 10%;
+    background-color: var(--panel-background);
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
+
+    background-image: linear-gradient(to top, gray 10%, var(--panel-background));
+
+}
+
+
+
+
+
+
+
+/* radar scherm */
+
+body section:first-of-type div:nth-of-type(2) {
+    width: 60%;
+    height: 100%;
+
+    position: absolute;
+    left: calc( 50% - 60%/2);
+    top: 5%;
+
+    z-index: -100;
+
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+    animation: radar 5s linear infinite;
+}
+
+body section:first-of-type div:nth-of-type(2) span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 3em black;
+    background-color: rgba(0, 0, 0, 0.549);
+
+    background-image:
+        conic-gradient(
+        from var(--radar-angle, 0deg),
+        transparent,
+        lime 44.8deg,
+        transparent 45.2deg
+        ),
+
+        repeating-radial-gradient(
+        closest-side circle,
+        lime 0% 2%,
+        transparent 2% 30%,
+        lime 30% 31%),
+
+        repeating-linear-gradient(
+        to right,
+        transparent 40.5% 50%,
+        lime 50% 50.5%,
+        transparent 50.5% 60%),
+
+        repeating-linear-gradient(
+        transparent 40.5% 50%,
+        lime 50% 50.5%,
+        transparent 50.5% 60%);
+
+    overflow: hidden;
+    cursor: pointer;
+}
+
+@keyframes radar{
+    0%{
+        --radar-angle:0deg;
+    }
+    100%{
+        --radar-angle:360deg;
+    }
+}
+
+@property --radar-angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0deg;
+  }
+
+
+  /* radar punten */
+body section:first-of-type div:nth-of-type(2) ul{
+    list-style: none;
+    position: inherit;
+
+    height: 100%;
+    width: 100%;
+
+    animation: checken 1s linear infinite both, rotate 7s linear infinite both;
+    animation-delay: 1s 1s;
+}
+
+body section:first-of-type div:nth-of-type(2) ul li{
+    display: block;
+    width: 1em;
+    aspect-ratio: 1;
+
+    border-radius: 50%;
+    background-color: lime;
+
+    position:absolute;
+
+}
+
+body section:first-of-type div:nth-of-type(2) ul li:first-child{
+    top: 30%;
+    left: 40%;
+}
+
+body section:first-of-type div:nth-of-type(2) ul li:nth-child(2){
+    top: 50%;
+    left: 80%;
+}
+
+body section:first-of-type div:nth-of-type(2) ul li:nth-child(3){
+    top: 70%;
+    left: 20%;
+}
+
+@keyframes checken{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+
+
+
+
+/* ************************************** */
+/* ************************************** */
+
+/* ********** control panel ************* */
+
+/* ************************************** */
+/* ************************************** */
+
+
+body section:nth-of-type(2) {
+    width: 100%;
+    height: 40%;
+    background-color: var(--panel-background);
+
+    position: absolute;
+    bottom: 0em;
+    z-index: 100;
+
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 20% repeat(2, 1fr) 3em;
+
+    background-image: linear-gradient(gray 0% 10%, var(--panel-background) 50%);
+    /* clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%); */
+    clip-path: polygon(20% 0%, 80% 0%, 100% 50%, 100% 100%, 0 100%, 0% 50%);
+}
+
+body section:nth-of-type(2) div:first-of-type{
+    display: block;
+    /* background-color: red; */
+    width: 100%;
+    height: 100%;
+    padding: .5em;
+
+    grid-column-start: 2;
+    grid-column-end: -2;
+
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+body section:nth-of-type(2) div:first-of-type span{
+    display: block;
+    /* width: 25%; */
+
+    width: 40%;
+    aspect-ratio: 2/1;
+
+    border-radius: 5em;
+    border: .1em solid rgb(4, 255, 0);
+    box-shadow: inset 0 0 3em black , 0 0 1em rgb(4, 255, 0) ;
+    background-color: rgb(0, 255, 110);
+
+    --radar-color: red;
+
+    background-image:
+        repeating-radial-gradient(
+        closest-side circle,
+        var(--radar-color) 0% 2%,
+        transparent 2% 30%,
+        var(--radar-color) 30% 31%),
+
+        repeating-linear-gradient(
+        to right,
+        transparent 40.5% 50%,
+        var(--radar-color) 50% 50.5%,
+        transparent 50.5% 60%),
+
+        repeating-linear-gradient(
+        transparent 40.5% 50%,
+        var(--radar-color) 50% 50.5%,
+        transparent 50.5% 60%);
+
+        position: relative;
+        overflow: hidden;
+}
+
+/* @keyframes wavy{
+    
+} */
+
+body section:nth-of-type(2) div:first-of-type span:nth-of-type(2){
+    --radar-color: rgb(0, 76, 255);
+}
+
+/* body section:nth-of-type(2) div:first-of-type span:nth-of-type(3){
+    --radar-color: rgb(255, 196, 0);
+} */
+
+
+
+/* https://css-tricks.com/how-to-create-wavy-shapes-patterns-in-css/ */
+
+/*  div:first-of-type span:nth-of-type(2) */
+
+
+body section:nth-of-type(2) div:first-of-type span:nth-of-type(1)::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: .1em;
+
+    transform: rotate(90);
+
+    position: absolute;
+
+    background-color: var( --radar-color);
+
+    animation: radar-line1 4s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes radar-line1{
+    0%{
+        top: 0;
+    }
+    50%{
+        top: 100%;
+    }
+    100%{
+        top: 0;
+    }
+}
+
+body section:nth-of-type(2) div:first-of-type span:nth-of-type(2)::before{
+    content: "";
+    display: block;
+    width: .1em;
+    height: 100%;
+
+    position: absolute;
+
+    background-color: var( --radar-color);
+
+    animation: radar-line2 8s linear infinite;
+    animation-delay: 2s;
+}
+
+@keyframes radar-line2{
+    0%{
+        left: 0;
+    }
+    50%{
+        left: 100%;
+    }
+    100%{
+        left: 0;
+    }
+}
+
+/* rotate knop */
+body section:nth-of-type(2) div:nth-of-type(2) {
+    width: 100%;
+    height: 100%;
+
+    grid-column-start: 4;
+    grid-column-end: 5;
+
+    grid-row-start: 3;
+    grid-row-end: 4;
+
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+    /* transform: skewX(40deg); */
+    transform-origin: top;
+
+    position: relative;
+}
+
+body section:nth-of-type(2) div:nth-of-type(2) label {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1;
+
+    position: absolute;
+    top: 0;
+
+    /* opacity: 50%; */
+
+
+    cursor: pointer;
+    z-index: 7;
+    background-color: var(--button-color);
+    /* background-image: url(https://www.svgrepo.com/show/500268/select-all.svg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center; */
+
+    border-radius: 50%;
+
+    transform-origin: center;
+    transition: 2s;
+    box-shadow: 0 .5em 0 var(--button-shadow-color), 0 .6em .5em .1em var(--shadow);
+}
+
+
+body section:nth-of-type(2) div:nth-of-type(2)::after{
+    content: "";
+    display: block;
+    background-color: gray;
+    width: 150%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+
+    position:absolute;
+    /* left: calc(50% - .5em/2); */
+    top: -.8em;
+
+    background-image: repeating-conic-gradient(rgb(175, 175, 175) 50% 51%, transparent 51% 60%) ;
+}
+
+body section:nth-of-type(2) div:nth-of-type(2) label::before{
+    content: "";
+    display: block;
+    background-color: rgb(91, 91, 91);
+    width: .5em;
+    height: 50%;
+    border-radius: .5em;
+
+    position:absolute;
+    left: calc(50% - .5em/2);
+    top: -.5em;
+
+}
+
+
+
+body section:nth-of-type(2) div:nth-of-type(2):has(input[type=checkbox]:checked) label{
+    transform: rotate(180deg);
+    box-shadow: 0 -.5em 0 var(--button-shadow-color), 0 -.6em .5em .1em var(--shadow);
+}
+
+
+body section:nth-of-type(2) div:nth-of-type(2) input[type="checkbox"]{
+    opacity: 0;
+}
+
+
+
+
+
+
+
+
+/* select knop */
+body section:nth-of-type(2) div:nth-of-type(3) {
+    width: 100%;
+    height: 100%;
+
+    grid-column-start: 6;
+    grid-column-end: 7;
+
+    grid-row-start: 3;
+    grid-row-end: 4;
+
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+    /* transform: skewX(40deg); */
+    transform-origin: top;
+
+    position: relative;
+}
+
+body section:nth-of-type(2) div:nth-of-type(3) label {
+    display: block;
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    top: 0;
+
+
+    cursor: pointer;
+    z-index: 7;
+    background-color: var(--button-color);
+    background-image: url(https://www.svgrepo.com/show/500268/select-all.svg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+
+    border-radius: .5em;
+
+    transform-origin: top;
+    box-shadow: 0 .5em 0 var(--button-shadow-color), 0 .6em .5em .1em var(--shadow);
+}
+
+body section:nth-of-type(2) div:nth-of-type(3):has(input[type=checkbox]:checked) {
+    transform: translateY(.5em) ;
+    /* translateX(1.5em) skewX(40deg) */
+}
+
+body section:nth-of-type(2) div:nth-of-type(3):has(input[type=checkbox]:checked) label {
+    background-color: var(--active-button-color);
+    box-shadow: 0 .1em 0 var(--active-button-shadow-color), 0 .1em .2em var(--active-shadow);
+
+}
+
+body section:nth-of-type(2) div:nth-of-type(3) input[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+}
