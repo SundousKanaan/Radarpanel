@@ -6,10 +6,31 @@ Wij vinden het web fascinerend. De laatste jaren is CSS een volwassen en zeer kr
 
 Goed om te weten: Het experiment wordt gewaardeerd - zelfs/zeker als het niet (helemaal) lukt. Voel je vrij om verder te gaan dan de CSS-technieken die je al beheerst.
 
-## Dingen om vooraf te doen
-- 🔱 **Fork** deze repository.
-- ✅ [**Enroll** je voor de minor via de courselector](https://icthva.sharepoint.com/sites/courseselector#/CourseSelector/web-design-and-development/2022-2023) (dan kun je je werk straks ook op [DLO](https://dlo.mijnhva.nl/d2l/home/456154) opleveren).
-- 📒 **Bekijk** het [programma](https://cmda-minor-web.github.io/css-to-the-rescue-2223/files/CSSttR-2223-Kick-off.pdf) (pdf 51MB), **het quizje** (soon) en de [kennismakingsoefening](https://cmda-minor-web.github.io/css-to-the-rescue-2223/oefening.html) alvast even.
+
+## Inspiratie wall:
+  <br> <img src="https://i.pinimg.com/564x/d1/42/c7/d142c773cc040f33a6689b2584649619.jpg" width="375px" alt="inspiratie foto 1">
+      <img src="https://i.pinimg.com/564x/a8/6c/47/a86c4789deb7d73de66f3b979a51edbe.jpg" width="375px" alt="inspiratie foto 2">
+      
+  <br> <img src="https://i.pinimg.com/originals/bc/92/e4/bc92e4718349f3debdcd54821e5bc4bd.jpg"  width="375px" alt="inspiratie foto 3">
+       <img src="https://images.blackmagicdesign.com/images/products/davinciresolve/panels/trackballs/trackballs-md.jpg?_v=1605140980" width="375px" alt="inspiratie foto 4">
+   
+   <br> <img src="https://zahcomputers.pk/wp-content/uploads/2022/08/MXG-by-ZAH-MGT-01-RGB-Lighting-SIT-Stand-Gaming-Desk-With-Creative-Control-Panel-%E2%80%93Single-Motor-Price-in-Pakistan-03.jpg" width="375px" alt="inspiratie foto 5">
+        <img src="https://thumbs.dreamstime.com/z/isometric-scientific-laboratory-experiment-experience-scientists-work-control-panel-analysis-production-development-study-96515046.jpg" width="375px" alt="inspiratie foto 6">
+        
+  <br> <img src="https://img.freepik.com/premium-vector/isometric-control-panel-3d-analog-retro-machine-power-supply-control-radio-broadcast-adjusting-with-knobs-buttons-toggles-vector-electric-equipment-illustration_102902-6769.jpg?w=2000" width="375px" alt="inspiratie foto 7">
+        <img src="https://media.istockphoto.com/id/1068542578/vector/radar-control-panel-abstract-technology-interface-hud-on-black-background-vector-design.jpg?s=1024x1024&w=is&k=20&c=mOQlHAYnn57jR94D5PoYRcqvXgIPQWXwCrRNllg6IIY=" width="375px" alt="inspiratie foto 8">
+        
+  <br> <img src="https://static.vecteezy.com/system/resources/previews/002/042/850/original/digital-green-radar-screen-radar-control-panel-abstract-technology-interface-hud-on-black-background-design-vector.jpg" width="375px" alt="inspiratie foto 9">
+        <img src="https://thumbs.dreamstime.com/b/green-radar-screen-black-background-hud-interface-127438527.jpg" width="375px" alt="inspiratie foto 10">
+        
+  <br> <img src="https://thumbs.dreamstime.com/b/radar-airport-air-traffic-control-screen-planes-grid-39923582.jpg" width="375px" alt="inspiratie foto 11">
+        <img src="https://slm-assets.secondlife.com/assets/7005009/lightbox/radar_j.jpg?1358710356" width="375px" alt="inspiratie foto 12">
+
+
+
+  
+## Titel
+
 
 ## Opdrachten
 Het vak bestaat uit:
@@ -17,17 +38,6 @@ Het vak bestaat uit:
 - [De eindopdracht](https://cmda-minor-web.github.io/css-to-the-rescue-2223/index.html)
 
 De [beoordelingscriteria voor de eindopdracht](https://cmda-minor-web.github.io/css-to-the-rescue-2223/beoordelingsformulier.html) op een rijte.
-
-## Themasessies
-Schrijf je in het [CSSttR channel](https://teams.microsoft.com/l/channel/19%3acb82166dd12f4702a8c3b130b60ee873%40thread.tacv2/04%2520CSS%2520to%2520the%2520Rescue?groupId=c8b97eb6-ad53-4531-ad66-5c3c6297951c&tenantId=0907bb1e-21fc-476f-8843-02d09ceb59a7) bij 'Files' in de 'Indeling en Planning' Excel in voor zowel woensdag als donderdag in voor een themasessie naar je keuze (1 per dag):
-- [Materiaal voor de themasessies](https://cmda-minor-web.github.io/css-to-the-rescue-2223/themas.html)
-
-## Programma
-Het vak beslaat 4 weken. Bekijk de [kick-off presentatie](https://cmda-minor-web.github.io/css-to-the-rescue-2223/files/CSSttR-2223-Kick-off.pdf) (pdf 48MB). 
-
-In Teams vind je het [CSSttR channel](https://teams.microsoft.com/l/channel/19%3acb82166dd12f4702a8c3b130b60ee873%40thread.tacv2/04%2520CSS%2520to%2520the%2520Rescue?groupId=c8b97eb6-ad53-4531-ad66-5c3c6297951c&tenantId=0907bb1e-21fc-476f-8843-02d09ceb59a7) bij 'Files' de Excel met de 'Indeling en Planning'. Daar schrijf je je ook in voor themasessies en het eindgesprek.
-
-Colleges, lessen en gesprekken vinden plaats in het TTH (4e verdieping :-).
 
 ## Docenten
 - Vasilis van Gemert
