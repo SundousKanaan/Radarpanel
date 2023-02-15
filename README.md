@@ -31,14 +31,14 @@ Goed om te weten: Het experiment wordt gewaardeerd - zelfs/zeker als het niet (h
         
         
         
-<!--   <br> <img src="https://64.media.tumblr.com/9058391f524aba9ea94363fe21f99bce/tumblr_pdo6uzLC1o1wez7sto1_540.gifv" width="375px" alt="inspiratie foto 15"> -->
-  <br> <img src="  https://64.media.tumblr.com/7924accb1e18d72b1dca9018e42ef921/tumblr_mhabyaOT6A1qeumowo1_500.gif
-" width="375px" alt="inspiratie foto 15">
-        <img src="https://64.media.tumblr.com/28a71a317a2eb78ec6b1c6d5dca19f68/tumblr_od0qh4Q3A41uqrdeoo1_640.gif
-" width="375px" alt="inspiratie foto 16">
+  <br> <img src="https://64.media.tumblr.com/7924accb1e18d72b1dca9018e42ef921/tumblr_mhabyaOT6A1qeumowo1_500.gif" width="375px" alt="inspiratie foto 15">
+        <img src="https://64.media.tumblr.com/28a71a317a2eb78ec6b1c6d5dca19f68/tumblr_od0qh4Q3A41uqrdeoo1_640.gif" width="375px" alt="inspiratie foto 16">
   
   <br> <img src="https://media.tenor.com/EjkGj0t0LR0AAAAC/anime-ship.gif" width="375px" alt="inspiratie foto 17">
        <img src="https://gifimage.net/wp-content/uploads/2018/10/anime-spaceship-gif-5.gif" width="375px" alt="inspiratie foto 18">
+        
+ <br> <img src="https://64.media.tumblr.com/9058391f524aba9ea94363fe21f99bce/tumblr_pdo6uzLC1o1wez7sto1_540.gifv" width="375px" alt="inspiratie foto 15">
+
 
 
 
