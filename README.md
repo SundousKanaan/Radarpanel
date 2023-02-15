@@ -37,7 +37,7 @@ Goed om te weten: Het experiment wordt gewaardeerd - zelfs/zeker als het niet (h
   <br> <img src="https://media.tenor.com/EjkGj0t0LR0AAAAC/anime-ship.gif" width="375px" alt="inspiratie foto 17">
        <img src="https://gifimage.net/wp-content/uploads/2018/10/anime-spaceship-gif-5.gif" width="375px" alt="inspiratie foto 18">
         
- <br> <img src="https://64.media.tumblr.com/9058391f524aba9ea94363fe21f99bce/tumblr_pdo6uzLC1o1wez7sto1_540.gifv" width="375px" alt="inspiratie foto 15">
+ <br> <img src="https://64.media.tumblr.com/9058391f524aba9ea94363fe21f99bce/tumblr_pdo6uzLC1o1wez7sto1_500.gifv" width="375px" alt="inspiratie foto 19">
 
 
 
