@@ -4,3 +4,10 @@ Ik twijfelde tussen het bouwen van een modulair bedieningspaneel en het maken va
 
 ## Documentatie:
 Lees [hier](https://github.com/SundousKanaan/css-to-the-rescue-2223/wiki) mijn experment document
+
+## Over:
+Radar bedieningspaneel waarop je targets kunt zien en deze kunt neerschieten om ze te vernietigen.
+
+## Schrijver:
+
+De maker van deze app is: [Sundous Kanaan] (https://github.com/SundousKanaan)
