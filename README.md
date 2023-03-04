@@ -4,7 +4,7 @@ Ik twijfelde tussen het bouwen van een modulair bedieningspaneel en het maken va
 
 ## Versies
 
-[radarpanel versie 1]
+[radarpanel versie 1](./RadarPanelV1/index.html)
 
 [radarpanel versie 2](./RadarPanelV2/index.html)
 
