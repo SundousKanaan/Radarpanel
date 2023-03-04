@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    padding-top: 2em;
+    padding-left: .5em;
+    width: 90vw;
+    height: 10em;
+    list-style: none;
+    background-color: rgba(3, 4, 5, 0.159);
+
+    perspective: 30em;
+    transform-style: preserve-3d;
+
+    display: grid;
+    place-content: center;
+}
+
+li {
+    width: 15vmin;
+    aspect-ratio: 1;
+
+    /* background-color: rgba(0, 255, 255, 0.57); */
+    position: absolute;
+    left: 7em;
+    top: 3em;
+    display: grid;
+    place-items: center;
+
+    perspective: 50em;
+    transform-style: preserve-3d;
+}
+
+label {
+    width: 8vmin;
+    aspect-ratio: 1;
+    transform-style: preserve-3d;
+
+    background-color: rgba(255, 0, 0, 0.585);
+
+    position: absolute;
+    transform-origin: 50% 0%;
+    transform-style: preserve-3d;
+    transform: rotateY(344deg) rotateX(-20deg);
+    /* transform: rotateY(15deg) translateZ(10vmin); */
+
+
+
+}
+
+ul li div,
+input {
+    appearance: none;
+    width: 8vmin;
+    height: inherit;
+
+    border: none;
+
+    position: absolute;
+    inset: 0;
+    opacity: 50%;
+
+    /* transform-style: preserve-3d; */
+
+    /* transform: translateZ(4vmin) rotateY(45deg); */
+
+
+}
+
+input{
+    transform:rotateY(90deg) translateZ(4vmin);
+    background-color: blue;
+}
+
+ul li div:first-of-type{
+    background-color: blueviolet;
+    transform:translateZ(4vmin);
+}
+
+ul li div:nth-of-type(2){
+    background-color: green;
+    transform:rotateX(90deg) translateZ(-4vmin);
+}
+
+ul li div:nth-of-type(3){
+    background-color: orange;
+    transform:rotateX(-90deg) translateZ(-4vmin);
+}
+
+ul li div:nth-of-type(4){
+    background-color: rgb(0, 0, 0);
+    transform: rotateY(-90deg) translateZ(4vmin);
+}
+
+ul li div:nth-of-type(5){
+    background-color: rgb(255, 0, 212);
+    transform: translateZ(-4vmin);
+}
