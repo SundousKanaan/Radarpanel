@@ -1,0 +1,74 @@
+/* top side */
+section>div>div:nth-of-type(3) {
+    background-color: var(--panel-background);
+    transform: rotateX(90deg) translateY(calc(var(--width) / 2)) translateZ(30vmin);
+
+    background-image: repeating-conic-gradient(transparent 0% 10%,
+            var(--panel-background-shadow),
+            transparent 40% 50%);
+    background-size: 2% 2%;
+}
+
+section>div>div:nth-of-type(3) span {
+    display: block;
+    width: .5em;
+    height: 2em;
+    background-color: red;
+
+    position: absolute;
+    left: 10%;
+    top: 7%;
+    z-index: 190;
+
+    transform-origin: top;
+    transform-style: preserve-3d;
+    transform: rotateX(90deg) translateY(-.5em);
+}
+
+section:has(input[id=powerKnop]:checked)>div>div:nth-of-type(3) span {
+    animation: nodegevaal .6s 1 linear forwards;
+    animation-delay: 8s;
+}
+
+@keyframes nodegevaal {
+    0% {
+        transform: rotateX(90deg) translateY(-.5em);
+
+    }
+
+    100% {
+        transform: rotateX(90deg) translateY(-1.5em);
+    }
+}
+
+section>div>div:nth-of-type(3) span::before {
+    content: "";
+    display: block;
+    width: 2em;
+    aspect-ratio: 1;
+    border-radius: 50%;
+
+    background-image: radial-gradient(circle at 40% 70%, rgba(255, 255, 255, 0.589) 7%, var(--shooting) 40%);
+    box-shadow: inset 0 0 .5em .5em var(--shooting);
+
+    position: absolute;
+    bottom: 1.95em;
+    left: calc(50% - 2em/2);
+    z-index: 200;
+}
+
+section:has(input[id=powerKnop]:checked)>div>div:nth-of-type(3) span::before {
+    animation: nodelicht .2s infinite linear forwards;
+    animation-delay: 8.5s;
+}
+
+section:has(input[id=powerKnop]:checked):has(input[id=nodeKnop]:checked)>div>div:nth-of-type(3) span::before {
+    animation-play-state: paused;
+}
+
+@keyframes nodelicht {
+    100% {
+        background-image: radial-gradient(circle at 40% 70%, white 7%, red 40%);
+        box-shadow: inset 0 0 .5em .5em red, 0 0 2em 1em red;
+    }
+}
