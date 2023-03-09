@@ -39,4 +39,5 @@ Radar bedieningspaneel waarop je targets kunt zien en deze kunt neerschieten om 
 De maker van deze app is: [Sundous Kanaan](https://github.com/SundousKanaan)
 
 ## Bronnen
-Clippath Div(3) https://bennettfeely.com/clippy/
+Clippath  https://bennettfeely.com/clippy/
+foto's www.pexels.com
