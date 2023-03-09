@@ -6,6 +6,12 @@ Ik twijfelde tussen het bouwen van een modulair bedieningspaneel en het maken va
 
 <img src="https://github.com/SundousKanaan/Radarpanel/blob/41e43124088fe8c0c093c4bd448ae0550f8f7e59/README-images/mijn-radar.png" width="900px"> 
 
+
+## Over
+
+Radar bedieningspaneel waarop je targets kunt zien en deze kunt neerschieten om ze te vernietigen.
+
+
 ## Gebruikershandleiding
 
  - Je kan scrollen om de radar te bevegen een nieuwe view hebben.
@@ -32,8 +38,6 @@ Ik twijfelde tussen het bouwen van een modulair bedieningspaneel en het maken va
 ## Documentatie
 Lees [hier](https://github.com/SundousKanaan/css-to-the-rescue-2223/wiki) mijn experment document
 
-## Over
-Radar bedieningspaneel waarop je targets kunt zien en deze kunt neerschieten om ze te vernietigen.
 
 ## Schrijver
 De maker van deze app is: [Sundous Kanaan](https://github.com/SundousKanaan)
