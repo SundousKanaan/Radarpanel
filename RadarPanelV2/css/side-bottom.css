@@ -75,9 +75,6 @@ section>div div:nth-of-type(4)>form>div:first-of-type ul {
     transform: rotateX(-20deg);
 }
 
-
-
-
 /* knop kern */
 section>div div:nth-of-type(4)>form>div:first-of-type ul li{
     width: var(--boxWidth);
@@ -91,8 +88,9 @@ section>div div:nth-of-type(4)>form>div:first-of-type ul li{
     transition: .5s;
 }
 
-
-
+section>div div:nth-of-type(4)>form>div:first-of-type ul li label{
+    border: solid .1em var(--button-border);
+}
 
 /* powerKnop style */
 section>div div:nth-of-type(4)>form>div:first-of-type ul li:first-of-type label{
@@ -106,10 +104,19 @@ section>div div:nth-of-type(4)>form>div:first-of-type ul li:first-of-type label{
 
 
 
+
+
+
+
+
+
 /* powerKnop is uit */ 
-section:not(input[id=powerKnop]:checked)>div div:nth-of-type(4)>form>div:first-of-type ul li:not(:first-child):not(li:has(input[id=modeKnop])){
+section:not(input[id=powerKnop]:checked)>div div:nth-of-type(4)>form>div:first-of-type ul li{
+    transform: translateZ(.5em);
+}
+
+section:not(input[id=powerKnop]:checked)>div div:nth-of-type(4)>form>div:first-of-type ul li:not(:first-of-type){
     transform: translateZ(-.3em);
-    
 }
 
 
@@ -118,8 +125,13 @@ section:has(input[id=powerKnop]:checked)>div div:nth-of-type(4)>form>div:first-o
     transform: translateZ(-.3em);
 }
 
+section:has(input[id=powerKnop]:checked)>div div:nth-of-type(4)>form>div:first-of-type ul li:nth-of-type(4) {
+    transform: translateZ(.5em);
+}
 
-section:has(input[id=powerKnop]:checked)>div div:nth-of-type(4)>form>div:first-of-type ul li:not(:first-child):not(li:has(input[id=modeKnop])):not(li:has(input[id=powerOn])){
+
+section:has(input[id=powerKnop]:checked)>div div:nth-of-type(4)>form>div:first-of-type ul li:nth-of-type(3),
+section:has(input[id=powerKnop]:checked)>div div:nth-of-type(4)>form>div:first-of-type ul li:nth-of-type(5){
     transform: translateZ(.5em);
 }
 
@@ -139,10 +151,6 @@ section:has(input[id=powerKnop]:checked)>div div:nth-of-type(4)>form>div:first-o
 }
 
 
-
-
-
-
 /* active buttons shadows */
 section:has(input[id=powerKnop]:checked)>div div:nth-of-type(4)>form>div:first-of-type ul li{
     box-shadow: 0 0 .5em .2em var(--active-shadow);
@@ -151,6 +159,13 @@ section:has(input[id=powerKnop]:checked)>div div:nth-of-type(4)>form>div:first-o
 section:has(input[id=powerKnop]:checked)>div div:nth-of-type(4)>form>div:first-of-type ul li div {
     background-color: var(--active-button-shadow-color);
 }
+
+section:has(input[id=powerKnop]:checked):has(input[id=nodeKnop]:checked)>div div:nth-of-type(4)>form>div:first-of-type ul li:nth-of-type(3),
+section:has(input[id=powerKnop]:checked):has(input[id=lichtKnop]:checked)>div div:nth-of-type(4)>form>div:first-of-type ul li:nth-of-type(5){
+    transform: translateZ(-.3em);
+}
+
+
 
 
 
@@ -172,8 +187,6 @@ section:has(input[id=powerKnop]:checked)>div div:nth-of-type(4)>form>div:first-o
 
 
 section>div div:nth-of-type(4)>form>div:first-of-type ul li:nth-of-type(2) label{
-    border: solid .1em var(--button-shadow-color);
-
     background-image: url(http://cdn.onlinewebfonts.com/svg/img_540040.png);
     background-repeat: no-repeat;
     background-size: 40%;
@@ -182,8 +195,6 @@ section>div div:nth-of-type(4)>form>div:first-of-type ul li:nth-of-type(2) label
 
 
 section>div div:nth-of-type(4)>form>div:first-of-type ul li:nth-of-type(3) label{
-    border: solid .1em var(--button-shadow-color);
-
     background-image: url(https://static.thenounproject.com/png/575934-200.png);
     background-repeat: no-repeat;
     background-size: 50%;
@@ -191,8 +202,6 @@ section>div div:nth-of-type(4)>form>div:first-of-type ul li:nth-of-type(3) label
 }
 
 section>div div:nth-of-type(4)>form>div:first-of-type ul li:nth-of-type(4) label{
-    border: solid .1em var(--button-border);
-
     background-image: url(https://cdn-icons-png.flaticon.com/512/1077/1077809.png);
     background-repeat: no-repeat;
     background-size: 50%;
@@ -200,8 +209,6 @@ section>div div:nth-of-type(4)>form>div:first-of-type ul li:nth-of-type(4) label
 }
 
 section>div div:nth-of-type(4)>form>div:first-of-type ul li:nth-of-type(5) label{
-    border: solid .1em var(--button-shadow-color);
-
     background-image: url(https://cdn-icons-png.flaticon.com/512/659/659645.png);
     background-repeat: no-repeat;
     background-size: 50%;
@@ -233,6 +240,7 @@ section>div div:nth-of-type(4)>form>div:first-of-type ul li:nth-child(4) div{
 section:has(input[id=modeKnop]:checked)>div div:nth-of-type(4)>form>div:first-of-type ul li:nth-child(4){
     transform: translateZ(-.3em);
 }
+
 section:has(input[id=modeKnop]:checked)>div div:nth-of-type(4)>form>div:first-of-type ul li:nth-child(4) label{
     background-color: var(--active-button-color);
     box-shadow: 0 0 .5em .2em var(--active-shadow);
@@ -250,10 +258,6 @@ section>div div:nth-of-type(4)>form>div:first-of-type ul li div{
     position: absolute;
     inset: 0;
 }
-
-
-
-
 
 section>div div:nth-of-type(4)>form>div:first-of-type ul li label{
     background-color: var(--button-color);
@@ -275,7 +279,6 @@ section>div div:nth-of-type(4)>form>div:first-of-type ul li div:nth-of-type(2){
 section>div div:nth-of-type(4)>form>div:first-of-type ul li div:nth-of-type(3){
     transform: rotateY(90deg) translateZ(calc(var(--boxWidth)/2));
 }
-
 
 
 
@@ -338,7 +341,7 @@ section>div div:nth-of-type(4)>form>div:nth-of-type(2) div:first-of-type{
 
     display: grid;
     justify-items: center;
-    transform: translateZ(.3em) translateY(.5em);
+    transform: translateZ(.3em) translateY(.5em) scale(.8);
 
     justify-self: end;
 }
@@ -433,7 +436,7 @@ section>div div:nth-of-type(4)>form>div:nth-of-type(2) div:first-of-type label i
     border-radius: .25em;
     transform: rotateX(180deg);
 
-    transition: 2s;
+    transition: 1s;
 }
 
 section>div div:nth-of-type(4)>form>div:nth-of-type(2) div:first-of-type label input:checked{
@@ -463,7 +466,7 @@ section>div div:nth-of-type(4)>form>div:nth-of-type(2) ul{
     border-radius: 50%;
 
     transform-style: preserve-3d;
-    transform: translateZ(.5em);
+    transform: translateZ(.5em) scale(.8);
 
     position: relative;
 
@@ -608,7 +611,6 @@ section>div div:nth-of-type(4)>form>div:nth-of-type(2) ul::before {
     border-radius: 50%;
 
     position: absolute;
-    /* z-index: -2; */
 
     transform: translateZ(-.5em) translateY(-.2em);
     background-image: repeating-conic-gradient(var(--button-color) 50% 51%, var(--button-shadow-color) 51% 60%);
@@ -625,6 +627,14 @@ section>div div:nth-of-type(4):has(input[id=powerKnop]:checked)>form:has(input[n
 
 
 
+
+
+
+
+
+
+
+
 /* shooting knop */
 /* **************** */
 
@@ -635,13 +645,14 @@ section>div div:nth-of-type(4)>form>div:nth-of-type(2) > div:last-of-type{
     --boxWidth:1.5em;
     align-self: start;
 
+    margin: .5em;
     width: var(--boxWidth);
     height: var(--boxWidth);
 
     transform-origin: 50% 0%;
     transform-style: preserve-3d;
     transform-origin: bottom;
-    transform: rotateX(0deg) translateZ(.3em);
+    transform: rotateX(0deg) translateZ(.3em) translateY(-1em);
 
     transition: .5s;
 
@@ -651,7 +662,7 @@ section>div div:nth-of-type(4)>form>div:nth-of-type(2) > div:last-of-type{
 
 section:has(input[id=powerKnop]:checked)>div div:nth-of-type(4)>form>div:nth-of-type(2) > div:last-of-type{
     box-shadow: 0 0 .5em .2em var(--active-shadow);
-    transform: rotateX(-20deg) translateZ(.5em);
+    transform: rotateX(-20deg) translateZ(.5em) translateY(-1em);
 }
 
 section:has(input[id=powerKnop]:checked)>div div:nth-of-type(4)>form>div:nth-of-type(2) > div:last-of-type div{
@@ -666,6 +677,7 @@ section:has(input[id=powerKnop]:checked)>div div:nth-of-type(4)>form:has(input[i
     background-color: var(--active-button-shadow-color);
     box-shadow: 0 0 .5em .2em var(--active-shadow);
     border: solid .1em var(--button-border);
+    transform: translateZ(.3em) translateY(-1em);
 }
 
 section:has(input[id=powerKnop]:checked)>div div:nth-of-type(4)>form:has(input[id=shootingKnop]:checked)>div:nth-of-type(2) > div:last-of-type label{
@@ -708,20 +720,83 @@ section>div div:nth-of-type(4)>form>div:nth-of-type(2) > div:last-of-type div:nt
 }
 
 
+@media screen and (min-width: 400px) {
+    section>div div:nth-of-type(4)>form>div:nth-of-type(2){
+        grid-template-columns: repeat(3,1fr);
+    }
+
+
+    section>div div:nth-of-type(4)>form>div:nth-of-type(2) > div:last-of-type{
+        margin: 0;
+    }
+    
+    section>div div:nth-of-type(4)>form>div:nth-of-type(2) > ul{
+        justify-self: center;
+    }
+
+    section>div div:nth-of-type(4)>form>div:nth-of-type(2) > div:last-of-type{
+        --boxWidth:2.5em;
+        grid-row-start: 1;
+        grid-column: 3/4;
+        justify-self: start;
+        align-self: center;
+        transform: rotateX(0deg) translateZ(.3em);
+
+        position: absolute;
+        top: 1em;
+    }
+}
+
+@media screen and (min-width: 650px){
+    section>div div:nth-of-type(4)>form>div:first-of-type{
+        height: 20%;
+    }
+
+    section>div div:nth-of-type(4)>form>div:nth-of-type(2){
+        padding-top: 2em;
+    }
+
+    section>div div:nth-of-type(4)>form>div:nth-of-type(2) div:first-of-type{
+        transform: translateZ(.3em) translateY(.5em) scale(1.1);
+        align-self: top;
+    }
+
+    section>div div:nth-of-type(4)>form>div:nth-of-type(2) > ul{
+        transform: translateZ(.5em) scale(1.2);
+    }
+
+    section>div div:nth-of-type(4)>form>div:nth-of-type(2) > div:last-of-type{
+        --boxWidth: 3em;
+    }
+}
+
 
 
 @media screen and (min-width: 880px){
 
-    section>div div:nth-of-type(4)>form>div:first-of-type {
-    height: 15%;
-    }
-
+    /* div 1 */
     section>div div:nth-of-type(4)>form>div:first-of-type::before{
         bottom: 1.5em;
     }
 
     section>div div:nth-of-type(4)>form>div:first-of-type ul{
         height: 60%;
+    }
+
+
+    /* div 2 */
+    section>div div:nth-of-type(4)>form>div:nth-of-type(2){
+        padding-top: 1em;
+    }
+
+    section>div div:nth-of-type(4)>form>div:nth-of-type(2) div:first-of-type{
+        justify-self: center;
+        transform: translateZ(.3em) translateY(.5em) scale(1.2);
+    }
+
+    section>div div:nth-of-type(4)>form>div:nth-of-type(2) > ul{
+        justify-self: center;
+        transform: translateZ(.5em) scale(1.3);
     }
 
     section>div div:nth-of-type(4)>form>div:nth-of-type(2) ul li label{
@@ -734,18 +809,10 @@ section>div div:nth-of-type(4)>form>div:nth-of-type(2) > div:last-of-type div:nt
 
     }
 
-    section>div div:nth-of-type(4)>form>div:nth-of-type(2) ul,
-    section>div div:nth-of-type(4)>form>div:nth-of-type(2) div:first-of-type{
+
+
+    section>div div:nth-of-type(4)>form>div:nth-of-type(2) > div:last-of-type{
         justify-self: center;
-    }
-
-    section>div div:nth-of-type(4)>form>div:nth-of-type(2) > div:last-of-type{
-        grid-column: 3/-1;
-        grid-row: 1;
-    }
-
-    section>div div:nth-of-type(4)>form>div:nth-of-type(2) > div:last-of-type{
-        margin-top: 1em;
-        --boxWidth:3em;
+        --boxWidth: 3.5em;
     }
 }

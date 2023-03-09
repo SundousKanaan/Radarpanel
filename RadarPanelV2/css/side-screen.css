@@ -99,7 +99,7 @@ section:has(input[id=powerKnop]:checked)>div div:nth-of-type(5)>div ul {
 
 section>div div:nth-of-type(5)>div ul li {
     display: block;
-    /* width: .5em; */
+    width: .5em;
     aspect-ratio: 1;
 
     background-color: var(--radar-neon);
@@ -110,6 +110,16 @@ section>div div:nth-of-type(5)>div ul li {
     animation: vorming 8s 1 both;
     animation-timing-function: steps(1, end);
     animation-play-state: paused;
+}
+
+body:has(input[id=handel]:checked) section>div div:nth-of-type(5)>div ul li {
+    animation: vormingOpAard 8s 1 both;
+    animation-timing-function: steps(1, end);
+    animation-play-state: paused;
+}
+
+body:has(input[id=handel]:checked):has(input[id=powerKnop]:checked) section>div div:nth-of-type(5)>div ul li {
+    animation-play-state: running;
 }
 
 section:has(input[id=powerKnop]:checked)>div div:nth-of-type(5)>div ul li {
@@ -151,8 +161,6 @@ section>div div:nth-of-type(5)>div ul li::after {
 
 section:has(input[id=powerKnop]:checked):has(input[id=shootingKnop]:checked)>div div:nth-of-type(5)>div ul li::after {
     width: 2em;
-    /* top: -.5em;
-    left: -1.5em; */
 }
 
 
@@ -160,6 +168,10 @@ section:has(input[id=powerKnop]:checked):has(input[value="optie1"]:checked)>div 
 section:has(input[id=powerKnop]:checked):has(input[value="optie2"]:checked)>div div:nth-of-type(5)>div ul li:nth-child(2)::after,
 section:has(input[id=powerKnop]:checked):has(input[value="optie3"]:checked)>div div:nth-of-type(5)>div ul li:nth-child(3)::after {
     display: block;
+}
+
+section:has(input[id=powerKnop]:checked):has(input[value="optie2"]:checked):has(input[id=shootingKnop]:checked)>div div:nth-of-type(5)>div ul li:nth-child(2){
+    transform: rotateY(180deg);
 }
 
 section:has(input[id=powerKnop]:checked):has(input[value="optie1"]:checked):has(input[id=shootingKnop]:checked)>div div:nth-of-type(5)>div ul li:first-child,
@@ -409,5 +421,54 @@ section:has(input[id=powerKnop]:checked):has(input[value="optie3"]:checked):has(
             -3em .5em 0 var(--radar-neon),
             -3em 1em 0 var(--radar-neon),
             -3em 1.5em 0 var(--radar-neon);
+    }
+}
+
+@keyframes vormingOpAard {
+    0% {
+        border-radius: 50%;
+        border: solid .1px white;
+        width: 1em;
+
+        transform: scale(1);
+    }
+
+    100% {
+        border-radius: 0%;
+        border: none;
+        width: .5em;
+        transform: scale(.5);
+
+        background-color: var(--schadow);
+
+        box-shadow: 
+        -1.5em .5em 0 black,
+        -1em .5em 0 black,
+        -1em 0 0 black,
+    
+        -.5em -.5em 0 var(--radar-neon),
+        -.5em 0 0 var(--radar-neon),
+        -.5em .5em 0 var(--radar-neon),
+        -.5em 1em 0 var(--radar-neon),
+    
+        0 -1em 0 var(--radar-neon),
+        0 -.5em 0 var(--radar-neon),
+        0 .5em 0 var(--radar-neon),
+        0 1em 0 var(--radar-neon),
+        0 1.5em 0 var(--radar-neon),
+    
+        .5em -1em 0 var(--radar-neon),
+        .5em -.5em 0 var(--radar-neon),
+        .5em 0 0 var(--radar-neon),
+        .5em .5em 0 var(--radar-neon),
+        .5em 1em 0 var(--radar-neon),
+        .5em 1.5em 0 var(--radar-neon),
+    
+        1em -.5em 0 var(--radar-neon),
+        1em 0 0 var(--radar-neon),
+        1em .5em 0 var(--radar-neon),
+        1em 1em 0 var(--radar-neon)
+        ;
+
     }
 }

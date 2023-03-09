@@ -14,7 +14,7 @@
     --button-color: rgb(202, 202, 202);
     --button-shadow-color: rgb(135, 135, 135);
     --schadow: rgba(0, 0, 0, 0.638);
-    --button-border:gray;
+    --button-border: gray;
 
 
     --active-button-color: rgb(0, 242, 250);
@@ -34,16 +34,16 @@
     --pixal-size: .5em;
     --shooting: rgba(255, 0, 0, 0.585);
 
-    --boxWidth:2em;
+    --boxWidth: 2em;
 }
 
-body:has(input[id=modeKnop]:checked){
+body:has(input[id=modeKnop]:checked) {
     --panel-background: rgb(94, 94, 94);
     --font-color: rgba(0, 0, 0, 0.445);
 
     --button-color: rgb(255, 255, 255);
     --button-shadow-color: rgb(177, 177, 177);
-    --button-border:rgb(255, 255, 255);
+    --button-border: rgb(255, 255, 255);
 
     --active-button-color: rgb(79, 103, 238);
     --active-button-shadow-color: rgb(0, 15, 150);
@@ -54,77 +54,70 @@ body:has(input[id=modeKnop]:checked){
     --power-schadow: rgb(106, 255, 0);
 }
 
-header{
+header {
     opacity: 0;
     position: absolute;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-input:not(input[id=handel]){
+input:not(input[id=handel]) {
     opacity: 0;
 }
 
+
 body {
     width: 100vw;
-    height: 100dvh;
-    height: 100vh;
+    height: 300dvw;
+    max-height: 330vw;
     overflow-x: hidden;
-}
 
-main{
-    width: 100%;
-    height: 100%;
-    /* overflow: hidden; */
-
+    background-color: black;
     background-image:
         repeating-linear-gradient(45deg, transparent 0% 10%, var(--font-color) 20% 30%, transparent 40% 50%),
-        /* linear-gradient(to bottom,rgba(5, 0, 59, 0.355) 20%, rgba(12, 1, 135, 0.322)), */
-        /* url(https://img.myloview.pl/fototapety/depth-of-sea-water-the-bottom-of-the-sea-the-rays-of-the-sun-through-the-water-the-underwater-world-dark-sea-the-background-rocks-and-stones-under-water-sea-sand-3d-illustration-700-249212034.jpg); */
-        url(https://images7.alphacoders.com/104/1049004.jpg);
-    /* url(https://images.unsplash.com/photo-1576707948881-b485713fbad7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dW5kZXIlMjB0aGUlMjBzZWF8ZW58MHx8MHx8&w=1000&q=80); */
-    /* url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c2353506-4d20-4fe6-8a3f-47d8c90bda35/d4rludn-1e7f1e7a-403b-401e-aae4-9868c00c03da.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2MyMzUzNTA2LTRkMjAtNGZlNi04YTNmLTQ3ZDhjOTBiZGEzNVwvZDRybHVkbi0xZTdmMWU3YS00MDNiLTQwMWUtYWFlNC05ODY4YzAwYzAzZGEuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Gs_bcaodT8FaHCn9pFkc4A2VB_UOkzJXG1QZc0POMo0); */
+        url(../images/de-zee.png);
 
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: bottom;
+    background-size: cover;
+    background-position: top center;
+}
 
+main {
+    width: 100%;
+    height: 100%;
     position: relative;
 }
 
-main:has(input[id=handel]:checked){
-    /* background-image: url(https://e0.pxfuel.com/wallpapers/704/375/desktop-wallpaper-iphone-7-plus-nature-background-thumbnail.jpg); */
-    background-image: 
-    repeating-linear-gradient(45deg, transparent 0% 10%, var(--font-color) 20% 30%, transparent 40% 50%),
-    url(https://images.ireland.com/thumbs/Images/amazing-landscapes/5079b776bd3645da95169ccd51f4278d/collagebackground-desktop.jpg);
+body:has(input[id=handel]:checked) {
+    background-image:
+        repeating-linear-gradient(45deg, transparent 0% 10%, var(--font-color) 20% 30%, transparent 40% 50%),
+        url(../images/de-aarde.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: top;
 }
 
-main::before{
+main::before {
     content: "";
     display: none;
-    width:100%;
+    width: 100%;
     height: 100%;
 
     position: absolute;
     top: 0;
 
     background-image:
-    conic-gradient(
-    at 50% 100% ,
-        transparent,
-        rgba(255, 255, 88, 0.596) 10% 10%,
-        transparent 12% 88%,
-        rgba(255, 255, 88, 0.596) 92% 92%,
-        transparent
-        );
+        conic-gradient(at 50% 100%,
+            transparent,
+            rgba(255, 255, 88, 0.596) 10% 10%,
+            transparent 12% 88%,
+            rgba(255, 255, 88, 0.596) 92% 92%,
+            transparent);
 }
 
-main:has(input[id=powerKnop]:checked):has(input[id=lichtKnop]:checked)::before{
+main:has(input[id=powerKnop]:checked):has(input[id=lichtKnop]:checked)::before {
     display: block;
 }
 
@@ -136,7 +129,7 @@ section {
     list-style: none;
     background-color: rgba(3, 4, 5, 0.159);
 
-    perspective: 30em;
+    perspective: 150vw;
     transform-style: preserve-3d;
 
     display: grid;
@@ -168,7 +161,7 @@ section>div {
     place-items: center;
 }
 
-section>div > div {
+section>div>div {
     width: var(--width);
     height: inherit;
     border: none;
@@ -180,42 +173,48 @@ section>div > div {
     box-shadow: inset 0 0 1em black;
 }
 
+@media screen and (min-width: 550px) {
+    /* body{
+        max-height: 155vh;
+    } */
 
-@media screen and (min-width: 992px){
     section{
-        perspective: 40em;
+        perspective: 200vw;
+    }
+}
+
+@media screen and (min-width: 650px){
+    section{
+        perspective: 250vw;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    /* body{
+        max-height: 247vh;
+    } */
+
+    section {
+        perspective: 280vw;
     }
 
-    section>div{
+    section>div {
         transform: rotateX(356deg) translateY(-63px);
     }
 }
 
+@media screen and (min-width: 880px){
+    /* body{
+        max-height: 300vh;
+    } */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    section{
+        perspective: 280em;
+    }
+}
+/* 
+@media screen and (min-width: 1300px){
+    body{
+        max-height: 230vh;
+    }
+} */
