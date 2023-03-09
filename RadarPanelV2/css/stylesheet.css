@@ -70,8 +70,7 @@ input:not(input[id=handel]) {
 body {
     width: 250vw;
     height: 300dvw;
-    height: 330vw;
-    /* overflow-x: hidden; */
+    height: 350vw;
 
     background-color: black;
     background-image:
@@ -98,6 +97,7 @@ main {
 }
 
 body:has(input[id=handel]:checked) {
+    background-color: white;
     background-image:
         url(../images/de-aarde.png);
     background-repeat: no-repeat;
