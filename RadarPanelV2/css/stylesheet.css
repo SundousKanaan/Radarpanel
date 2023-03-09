@@ -68,19 +68,27 @@ input:not(input[id=handel]) {
 
 
 body {
-    width: 100vw;
+    width: 250vw;
     height: 300dvw;
     height: 330vw;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 
     background-color: black;
     background-image:
-        /* repeating-linear-gradient(45deg, transparent 0% 10%, var(--font-color) 20% 30%, transparent 40% 50%), */
         url(../images/de-zee.png);
 
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top center;
+    background-position: top left;
+}
+
+
+/* https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while-still-being-able-to-scroll */
+body::-webkit-scrollbar{
+    display: none;
+
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
 }
 
 main {
@@ -91,11 +99,10 @@ main {
 
 body:has(input[id=handel]:checked) {
     background-image:
-        repeating-linear-gradient(45deg, transparent 0% 10%, var(--font-color) 20% 30%, transparent 40% 50%),
-        url(../images/de-aarde.jpg);
+        url(../images/de-aarde.png);
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: top;
+    background-size:  cover;
+    background-position: top left;
 }
 
 main::before {
@@ -180,7 +187,7 @@ section>div>div {
 
 /* bubbels */
 body>div {
-    width: 100%;
+    width: inherit;
     height: inherit;
 
     /* background-color: red; */
@@ -192,7 +199,7 @@ body>div {
     transform-style: preserve-3d;
 }
 
-body:has(input[id=handel]:checked)>div{
+body:has(input[id=handel]:checked)>div div:first-of-type{
     display: none;
 }
 
@@ -362,6 +369,14 @@ body>div div:nth-of-type(2){
     top: 220vw;
 }
 
+body:has(input[id=handel]:checked)>div div:nth-of-type(2){
+    top: 0;
+}
+body:has(input[id=handel]:checked)>div div:nth-of-type(2) span{
+    background-image: url(https://tpp8a.files.wordpress.com/2014/04/bird-5.gif);
+}
+
+
 body>div div:nth-of-type(2) span{
     --vis-width:4em;
     --delay:1s;
@@ -371,7 +386,6 @@ body>div div:nth-of-type(2) span{
     display: block;
 
     position: absolute;
-    /* background-color: red; */
     background-image: url(https://www.animaties.com/data/media/194/vis-bewegende-animatie-0419.gif);
     background-size: cover;
     background-repeat: no-repeat;
@@ -380,18 +394,18 @@ body>div div:nth-of-type(2) span{
 }
 
 body>div div:nth-of-type(2) span:first-of-type{
-    animation-duration: 8s;
+    animation-duration: 20s;
     top: calc(50% - var(--vis-width)/2);
 }
 
 body>div div:nth-of-type(2) span:nth-of-type(2){
-    animation-duration: 13s;
+    animation-duration: 25s;
     animation-delay: calc(-1 * var(--delay));
     top: calc(60% - var(--vis-width));
 }
 
 body>div div:nth-of-type(2) span:nth-of-type(3){
-    animation-duration: 10s;
+    animation-duration: 30s;
     animation-delay: calc(1.5 * var(--delay));
     top: calc(30% - var(--vis-width)/2);
 }
@@ -402,7 +416,7 @@ body>div div:nth-of-type(2) span:nth-of-type(3){
         transform: scale(0) translateX(0) translateZ(0);
     }
     100%{
-        transform: scale(1.5) translateX(100vw) translateZ(30vw);
+        transform: scale(1.5) translateX(250vw) translateZ(30vw);
     }
 }
 
@@ -411,18 +425,18 @@ body>div div:nth-of-type(2) span:not(:nth-of-type(-n+3)){
 }
 
 body>div div:nth-of-type(2) span:nth-of-type(4){
-    animation-duration: 8s;
+    animation-duration: 25s;
     top: calc(70% - var(--vis-width)/2);
 }
 
 body>div div:nth-of-type(2) span:nth-of-type(5){
-    animation-duration: 10s;
+    animation-duration: 30s;
     animation-delay: calc(-2 * var(--delay));
     top: calc(40% - var(--vis-width));
 }
 
 body>div div:nth-of-type(2) span:nth-of-type(6){
-    animation-duration: 13s;
+    animation-duration: 20s;
     animation-delay: calc(1.3 * var(--delay));
     top: calc(10% - var(--vis-width)/2);
 }
@@ -434,7 +448,7 @@ body>div div:nth-of-type(2) span:nth-of-type(6){
     }
     100%{
         right: 100vw;
-        transform: rotateY(180deg) scale(1.5) translateX(100vw) translateZ(30vw);
+        transform: rotateY(180deg) scale(1.5) translateX(250vw) translateZ(30vw);
     }
 }
 
