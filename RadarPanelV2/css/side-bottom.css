@@ -110,6 +110,7 @@ section>div div:nth-of-type(4)>form>div:first-of-type ul li:first-of-type label{
 
 
 
+
 /* powerKnop is uit */ 
 section:not(input[id=powerKnop]:checked)>div div:nth-of-type(4)>form>div:first-of-type ul li{
     transform: translateZ(.5em);
@@ -117,6 +118,14 @@ section:not(input[id=powerKnop]:checked)>div div:nth-of-type(4)>form>div:first-o
 
 section:not(input[id=powerKnop]:checked)>div div:nth-of-type(4)>form>div:first-of-type ul li:not(:first-of-type){
     transform: translateZ(-.3em);
+}
+
+section:not(input[id=powerKnop]:checked)>div div:nth-of-type(4)>form>div:first-of-type ul li:first-child label{
+    background-color: var(--active-button-color);
+}
+
+section:not(input[id=powerKnop]:checked)>div div:nth-of-type(4)>form>div:first-of-type ul li:first-child div{
+    background-color: var(--active-button-shadow-color);
 }
 
 
@@ -152,11 +161,11 @@ section:has(input[id=powerKnop]:checked)>div div:nth-of-type(4)>form>div:first-o
 
 
 /* active buttons shadows */
-section:has(input[id=powerKnop]:checked)>div div:nth-of-type(4)>form>div:first-of-type ul li{
+section:has(input[id=powerKnop]:checked)>div div:nth-of-type(4)>form>div:first-of-type ul li:not(li:has(input[id=nodeKnop])) {
     box-shadow: 0 0 .5em .2em var(--active-shadow);
 }
 
-section:has(input[id=powerKnop]:checked)>div div:nth-of-type(4)>form>div:first-of-type ul li div {
+section:has(input[id=powerKnop]:checked)>div div:nth-of-type(4)>form>div:first-of-type ul li:not(li:has(input[id=nodeKnop])) div {
     background-color: var(--active-button-shadow-color);
 }
 
@@ -199,6 +208,17 @@ section>div div:nth-of-type(4)>form>div:first-of-type ul li:nth-of-type(3) label
     background-repeat: no-repeat;
     background-size: 50%;
     background-position: center;
+
+    background-color: red;
+}
+
+section>div div:nth-of-type(4)>form>div:first-of-type ul li:nth-child(3){
+    box-shadow: 0 0 .5em .2em red;
+}
+
+section:has(input[id=powerKnop]:checked)>div div:nth-of-type(4)>form>div:first-of-type ul li:nth-child(3) div,
+section>div div:nth-of-type(4)>form>div:first-of-type ul li:nth-child(3) div{
+    background-color: rgb(167, 0, 0);
 }
 
 section>div div:nth-of-type(4)>form>div:first-of-type ul li:nth-of-type(4) label{
@@ -221,7 +241,6 @@ section:has(input[id=powerKnop]:checked):has(input[id=lichtKnop]:checked)>div di
     transform: translateZ(-.3em);
 }
 
-section:has(input[id=powerKnop]:checked):has(input[id=nodeKnop]:checked)>div div:nth-of-type(4)>form>div:first-of-type ul li:nth-child(3) label,
 section:has(input[id=powerKnop]:checked):has(input[id=lichtKnop]:checked)>div div:nth-of-type(4)>form>div:first-of-type ul li:nth-child(5) label{
     background-color: var(--active-button-color);
     box-shadow: 0 0 .5em .2em var(--active-shadow);
@@ -264,7 +283,7 @@ section>div div:nth-of-type(4)>form>div:first-of-type ul li label{
     transform: translateZ(calc(var(--boxWidth)/2));
 }
 
-section>div div:nth-of-type(4)>form>div:first-of-type ul li div{
+section>div div:nth-of-type(4)>form>div:first-of-type ul li:not(li:has(input[id=nodeKnop])) div{
     background-color: var(--button-shadow-color);
 }
 
@@ -662,7 +681,7 @@ section>div div:nth-of-type(4)>form>div:nth-of-type(2) > div:last-of-type{
 
 section:has(input[id=powerKnop]:checked)>div div:nth-of-type(4)>form>div:nth-of-type(2) > div:last-of-type{
     box-shadow: 0 0 .5em .2em var(--active-shadow);
-    transform: rotateX(-20deg) translateZ(.5em) translateY(-1em);
+    transform: rotateX(-20deg) translateZ(.5em);
 }
 
 section:has(input[id=powerKnop]:checked)>div div:nth-of-type(4)>form>div:nth-of-type(2) > div:last-of-type div{

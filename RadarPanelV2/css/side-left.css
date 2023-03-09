@@ -12,7 +12,13 @@ section>div>div:nth-of-type(2) {
             var(--panel-background-shadow) 0% 23%,
             transparent 0% 93%,
             var(--panel-background-shadow)0% 96%,
-            var(--panel-background)0%);
+            var(--panel-background)0%),
+
+        repeating-linear-gradient(
+            45deg,
+            transparent 0% 10%,
+            rgba(255, 255, 255, 0.281) 20% 40%,
+            transparent 50% 60%);
 }
 
 section>div>div:nth-of-type(2)::before {
@@ -25,10 +31,9 @@ section>div>div:nth-of-type(2)::before {
     position: absolute;
     right: 5%;
     z-index: -3;
-    /* background-image: linear-gradient(to top,var(--panel-background) 20%, var(--panel-background-shadow) 0% 23%, var(--panel-background-shadow) 0% 95%, transparent 0%); */
     background-image: linear-gradient(to top,
-            rgba(146, 146, 146, 0.639),
-            var(--panel-background) 3% 20%,
-            var(--panel-background-shadow) 0% 96%,
-            transparent 0%);
+        rgba(146, 146, 146, 0.639),
+        var(--panel-background) 3% 20%,
+        var(--panel-background-shadow) 0% 96%,
+        transparent 0%);
 }

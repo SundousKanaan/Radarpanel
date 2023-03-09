@@ -13,8 +13,14 @@ section>div>div:first-of-type {
             var(--panel-background) 20%,
             var(--panel-background-shadow) 0% 23%,
             transparent 0% 93%,
-            var(--panel-background-shadow)0% 96%,
-            var(--panel-background)0%);
+            var(--panel-background-shadow) 0% 96%,
+            var(--panel-background) 0%),
+            
+        repeating-linear-gradient(
+            -45deg,
+            transparent 0% 30%,
+            rgba(255, 255, 255, 0.281) 40% 50%,
+            transparent 60% 70%);
 }
 
 

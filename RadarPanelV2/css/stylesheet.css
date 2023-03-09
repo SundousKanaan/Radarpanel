@@ -14,7 +14,7 @@
     --button-color: rgb(202, 202, 202);
     --button-shadow-color: rgb(135, 135, 135);
     --schadow: rgba(0, 0, 0, 0.638);
-    --button-border: gray;
+    --button-border: rgb(255, 255, 255);
 
 
     --active-button-color: rgb(0, 242, 250);
@@ -43,7 +43,6 @@ body:has(input[id=modeKnop]:checked) {
 
     --button-color: rgb(255, 255, 255);
     --button-shadow-color: rgb(177, 177, 177);
-    --button-border: rgb(255, 255, 255);
 
     --active-button-color: rgb(79, 103, 238);
     --active-button-shadow-color: rgb(0, 15, 150);
@@ -71,12 +70,12 @@ input:not(input[id=handel]) {
 body {
     width: 100vw;
     height: 300dvw;
-    max-height: 330vw;
+    height: 330vw;
     overflow-x: hidden;
 
     background-color: black;
     background-image:
-        repeating-linear-gradient(45deg, transparent 0% 10%, var(--font-color) 20% 30%, transparent 40% 50%),
+        /* repeating-linear-gradient(45deg, transparent 0% 10%, var(--font-color) 20% 30%, transparent 40% 50%), */
         url(../images/de-zee.png);
 
     background-repeat: no-repeat;
@@ -172,6 +171,281 @@ section>div>div {
     transform-style: preserve-3d;
     box-shadow: inset 0 0 1em black;
 }
+
+
+
+
+
+
+
+/* bubbels */
+body>div {
+    width: 100%;
+    height: inherit;
+
+    /* background-color: red; */
+    position: absolute;
+    top: 0;
+    z-index: -2;
+
+    perspective: 30em;
+    transform-style: preserve-3d;
+}
+
+body:has(input[id=handel]:checked)>div{
+    display: none;
+}
+
+body>div div:first-of-type{
+    width: 100%;
+    height: 130vw;
+
+    position: fixed;
+    top: 0;
+}
+
+body>div div:first-of-type span{
+    display: block;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+
+    background-image: radial-gradient(circle at 60% 70% ,white 1% ,transparent 25%);
+    box-shadow: inset 0 0 2em white,
+     0 0 .5em white;
+
+    position: absolute;
+    offset-rotate: 250deg;
+}
+
+body>div div:first-of-type span:first-of-type,
+body>div div:first-of-type span:nth-of-type(4),
+body>div div:first-of-type span:nth-of-type(5),
+body>div div:first-of-type span:nth-of-type(8){
+    top: 40%;
+
+    offset-path: path('M527.85,39.7c-7.58-15.37-20.45-35.25-40-38.71-39.46-6.99-57.53,62.61-116.77,73.55-45.12,8.33-55.82-28.02-123.72-28.06-43.84-.03-54.27,15.12-94.99,19.68-35.23,3.94-86.12-.83-152.11-41.61');
+
+    animation: path1 10s -1s infinite both linear;
+}
+
+body>div div:first-of-type span:nth-of-type(4){
+    top: 55%;
+
+    left: 10% ;
+    animation: path1 12s 1.5s infinite both linear;
+}
+
+@keyframes path1{
+    0%{
+        offset-distance: 0%;
+        width: 1em;
+        opacity: 0;
+    }
+    50%{
+        opacity: 100%;
+    }
+    100%{
+        offset-distance: 100%;
+        width: 8em;
+        opacity: 0;
+    }
+}
+
+body>div div:first-of-type span:nth-of-type(7),
+body>div div:first-of-type span:nth-of-type(2){
+    width: 5em;
+    aspect-ratio: 1/1;
+
+    top: 20%;
+    left: 4em;
+
+    offset-path: path('M618.69,231.62c-39.53-95.72-73.16-102.9-99.84-93.42-31.66,11.25-72.56-12.59-94.07-34.56-18.38-18.78-19.46-27.76-35.68-32.58-14.79-4.39-37.44-2.48-49.61,13.93-7.41,9.98-11.86,26.59-4.75,37.1,12.79,18.89,58.99,12.24,66.69-5.48,8.38-19.3-24.63-61.56-53.79-60.71-37.51,1.1-39.7,72.67-83.8,82.99-38.57,9.03-65.08-39.13-145.63-87.44C71.31,23.32,28.39,8.51,.14,.48');
+
+    animation: path2 8s -3.5s infinite both linear;
+}
+
+
+@keyframes path2{
+    0%{
+        offset-distance: 0%;
+        width: 1em;
+        opacity: 0;
+    }
+    50%{
+        opacity: 100%;
+    }
+    100%{
+        offset-distance: 100%;
+        width: 5em;
+        opacity: 0;
+    }
+}
+
+body>div div:first-of-type span:nth-of-type(6),
+body>div div:first-of-type span:nth-of-type(3){
+    width: 5em;
+    aspect-ratio: 1/1;
+
+    top: auto;
+    left: 4em;
+    bottom: 30%;
+
+    offset-path: path('M618.69,.19c-39.53,95.72-73.16,102.9-99.84,93.42-31.66-11.25-72.56,12.59-94.07,34.56-18.38,18.78-19.46,27.76-35.68,32.58-14.79,4.39-37.44,2.48-49.61-13.93-7.41-9.98-11.86-26.59-4.75-37.1,12.79-18.89,58.99-12.24,66.69,5.48,8.38,19.3-24.63,61.56-53.79,60.71-37.51-1.1-39.7-72.67-83.8-82.99-38.57-9.03-65.08,39.13-145.63,87.44C71.31,208.49,28.39,223.31,.14,231.33');
+
+    animation: path2 9s -2.5s infinite both linear;
+}
+
+body>div div:first-of-type span:nth-of-type(8),
+body>div div:first-of-type span:nth-of-type(5){
+    left: 70%;
+
+    animation: path3 12s 1s infinite both linear;
+}
+
+body>div div:first-of-type span:nth-of-type(8){
+    animation-delay: 2s;
+    animation-duration: 5s;
+}
+
+@keyframes path3{
+    0%{
+        offset-distance: 100%;
+        width: 1em;
+        opacity: 0;
+    }
+    50%{
+        opacity: 100%;
+    }
+    100%{
+        offset-distance: 0%;
+        width: 8em;
+        opacity: 0;
+    }
+}
+
+body>div div:first-of-type span:nth-of-type(6){
+    top: 10%;
+    left: 70%;
+
+    animation: path3 12s -1s infinite both linear;
+}
+
+body>div div:first-of-type span:nth-of-type(7){
+    bottom: 45%;
+    top: auto;
+    left: 65%;
+
+    animation: path4 12s -3s infinite both linear;
+}
+
+@keyframes path4{
+    0%{
+        offset-distance: 100%;
+        width: 1em;
+        opacity: 0;
+    }
+    50%{
+        opacity: 100%;
+    }
+    100%{
+        offset-distance: 0%;
+        width: 5em;
+        opacity: 0;
+    }
+}
+
+body>div div:nth-of-type(2){
+    width: 100%;
+    height: 20%;
+
+    position: absolute;
+    top: 220vw;
+}
+
+body>div div:nth-of-type(2) span{
+    --vis-width:4em;
+    --delay:1s;
+    width: var(--vis-width);
+    aspect-ratio: 1/1;
+
+    display: block;
+
+    position: absolute;
+    /* background-color: red; */
+    background-image: url(https://www.animaties.com/data/media/194/vis-bewegende-animatie-0419.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    animation: swemmenvis infinite both linear;
+}
+
+body>div div:nth-of-type(2) span:first-of-type{
+    animation-duration: 8s;
+    top: calc(50% - var(--vis-width)/2);
+}
+
+body>div div:nth-of-type(2) span:nth-of-type(2){
+    animation-duration: 13s;
+    animation-delay: calc(-1 * var(--delay));
+    top: calc(60% - var(--vis-width));
+}
+
+body>div div:nth-of-type(2) span:nth-of-type(3){
+    animation-duration: 10s;
+    animation-delay: calc(1.5 * var(--delay));
+    top: calc(30% - var(--vis-width)/2);
+}
+
+
+@keyframes swemmenvis{
+    0%{
+        transform: scale(0) translateX(0) translateZ(0);
+    }
+    100%{
+        transform: scale(1.5) translateX(100vw) translateZ(30vw);
+    }
+}
+
+body>div div:nth-of-type(2) span:not(:nth-of-type(-n+3)){
+    animation: terugswemmenvis infinite both linear;
+}
+
+body>div div:nth-of-type(2) span:nth-of-type(4){
+    animation-duration: 8s;
+    top: calc(70% - var(--vis-width)/2);
+}
+
+body>div div:nth-of-type(2) span:nth-of-type(5){
+    animation-duration: 10s;
+    animation-delay: calc(-2 * var(--delay));
+    top: calc(40% - var(--vis-width));
+}
+
+body>div div:nth-of-type(2) span:nth-of-type(6){
+    animation-duration: 13s;
+    animation-delay: calc(1.3 * var(--delay));
+    top: calc(10% - var(--vis-width)/2);
+}
+
+@keyframes terugswemmenvis{
+    0%{
+        right: -10vw;
+        transform: rotateY(180deg) scale(0) translateX(0vw) translateZ(0);
+    }
+    100%{
+        right: 100vw;
+        transform: rotateY(180deg) scale(1.5) translateX(100vw) translateZ(30vw);
+    }
+}
+
+
+
+
+/* ****************** */
+/* ****************** */
+/* ****************** */
+
+
 
 @media screen and (min-width: 550px) {
     /* body{
