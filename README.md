@@ -4,7 +4,7 @@ Ik twijfelde tussen het bouwen van een modulair bedieningspaneel en het maken va
 
 ## Versies
 
-[radarpanel versie 1](https://sundouskanaan.github.io/Radarpanel/RadarPanelV1/index.htmll)
+[radarpanel versie 1](https://sundouskanaan.github.io/Radarpanel/RadarPanelV1/index.html)
 
 [radarpanel versie 2](https://sundouskanaan.github.io/Radarpanel/RadarPanelV2/index.html)
 
