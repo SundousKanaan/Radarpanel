@@ -4,7 +4,7 @@ Ik twijfelde tussen het bouwen van een modulair bedieningspaneel en het maken va
 
 ## Mijn Radar:
 
-<img src="https://github.com/SundousKanaan/Radarpanel/blob/41e43124088fe8c0c093c4bd448ae0550f8f7e59/README-images/mijn-radar.png" width="900px"> 
+<img src="https://github.com/SundousKanaan/Radarpanel/blob/ca1f459cc31736f3db92bd79914ff72a1626a01d/README-images/mijn-radar.png" width="900px"> 
 
 
 ## Over
